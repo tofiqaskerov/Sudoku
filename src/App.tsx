@@ -36,7 +36,7 @@ function App() {
     
   }
   return <>
-  <button className="undo" onClick={handleUndo}>Undo</button>
+  <button  disabled={points.length === 0} className="undo" onClick={handleUndo}>Undo</button>
   <button  disabled={popped.length === 0 } className="redo" onClick={handleRedo}>Redo</button>
   <div className='App'
     onClick={handlePlaceCircle}
